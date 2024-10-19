@@ -1,0 +1,6 @@
+<h1>stories-list works!</h1>
+
+@for (story of stories$ | async; track story.id) {
+  story
+  <a [href]="story.url" [innerText]="story.title"></a>
+}
